@@ -1,6 +1,12 @@
 import Button from "./Button";
 
 export default function Navbar() {
+  const scrollToSection = (id) => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div className="flex items-center mt-5 justify-center md:justify-between md:mx-[10vw] relative">
       <div className="overflow-hidden rounded-full h-[50px] w-[50px]">
@@ -8,14 +14,22 @@ export default function Navbar() {
       </div>
       <ul className="hidden md:block">
         <li className="flex gap-8">
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <a href="#">Skill</a>
-          <a href="#">Blog</a>
+          <a onClick={() => scrollToSection("work")} href="#work">
+            Work
+          </a>
+          <a onClick={() => scrollToSection("about")} href="#about">
+            About
+          </a>
+          <a onClick={() => scrollToSection("skill")} href="#skill">
+            Skill
+          </a>
+          <a onClick={() => scrollToSection("blog")} href="#blog">
+            Blog
+          </a>
         </li>
       </ul>
       <div className="flex gap-2">
-        <Button className="hidden md:block">Contract Me</Button>
+        <Button className="hidden md:block">Contact Me</Button>
       </div>
     </div>
   );

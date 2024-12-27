@@ -19,7 +19,10 @@ const blogs = [
 ];
 export default function BlogSection() {
   return (
-    <div className="flex flex-wrap items-start gap-8 justify-center md:px-[10vw] py-[7.5rem] md:py-[10rem] bg-[#F5F5F5] gap-4">
+    <div
+      id="blog"
+      className="flex flex-wrap items-start gap-8 justify-center md:px-[10vw] py-[7.5rem] md:py-[10rem] bg-[#F5F5F5] gap-4"
+    >
       {blogs.map((blog, index) => (
         <div className="max-w-[300px] flex flex-col gap-2">
           <img

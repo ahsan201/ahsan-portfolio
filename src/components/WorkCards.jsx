@@ -21,7 +21,10 @@ const workList = [
 ];
 export default function WorkCards() {
   return (
-    <div className="flex gap-4 flex-col mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]">
+    <div
+      id="work"
+      className="flex gap-4 flex-col mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]"
+    >
       {workList.map((work, index) => (
         <div className="flex flex-col lg:flex-row gap-8 items-center card-work p-2">
           <div>

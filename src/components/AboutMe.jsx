@@ -1,6 +1,9 @@
 export default function AboutMe() {
   return (
-    <div className="md:mx-[10vw] mx-5 flex flex-col lg:flex-row lg:gap-[10rem] justify-between items-center sm:flex-col">
+    <div
+      id="about"
+      className="md:mx-[10vw] mx-5 flex flex-col lg:flex-row lg:gap-[10rem] justify-between items-center sm:flex-col"
+    >
       <div className="relative max-w-[250px] md:max-w-[520px] h-auto mx-auto">
         <img src="/my-photo.jpg" alt="my photo " className="invisible" />
         <img
