@@ -109,9 +109,6 @@ button {
 }
 .bento div:nth-child(4):not(.bento-card-gradient, .design-box1, .design-box2) {
   grid-area: d;
-  background-image: url("/photography.png");
-  background-size: cover;
-  background-position: center;
   transition: all 0.4s ease;
 }
 .bento div:nth-child(5):not(.design-box1, .design-box2) {
@@ -200,6 +197,7 @@ button {
   border-radius: 1rem;
   object-fit: contain;
   filter: saturate(0);
+  transition: all 0.4s ease;
 }
 
 /* footer  */
@@ -257,7 +255,7 @@ footer a {
   backdrop-filter: blur(8px);
 }
 
-/* Scolling */
+/* hover animation */
 @media (min-width: 770px) {
   .js-logo {
     transition: all 0.4s ease;
@@ -302,5 +300,14 @@ footer a {
   .bento div:nth-child(6):hover .cursor-2 {
     right: 100px;
     top: 180px;
+  }
+  .skill img:hover {
+    filter: saturate(1);
+  }
+  .photography {
+    transition: all 0.4s ease;
+  }
+  .photography:hover {
+    scale: 1.2;
   }
 }

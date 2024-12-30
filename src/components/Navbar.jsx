@@ -9,9 +9,11 @@ export default function Navbar() {
 
   return (
     <div className="flex items-center mt-5 justify-center md:justify-between md:mx-[10vw] relative">
-      <div className="overflow-hidden rounded-full h-[50px] w-[50px]">
-        <img src="/main-logo.jpg" alt="main logo" />
-      </div>
+      <a href="/">
+        <div className="overflow-hidden rounded-full h-[50px] w-[50px]">
+          <img src="/main-logo.jpg" alt="main logo" />
+        </div>
+      </a>
       <ul className="hidden md:block">
         <li className="flex gap-8">
           <a onClick={() => scrollToSection("work")} href="#work">
@@ -29,7 +31,9 @@ export default function Navbar() {
         </li>
       </ul>
       <div className="flex gap-2">
-        <Button className="hidden md:block">Contact Me</Button>
+        <Button className="hidden md:block" btnLink="/contact">
+          Contact Me
+        </Button>
       </div>
     </div>
   );

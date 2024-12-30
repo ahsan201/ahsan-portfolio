@@ -40,10 +40,15 @@ export default function Bento() {
         </h4>
         <div className="bento-card-gradient"></div>
       </div>
-      <div className="relative min-w-[120px] min-h-[350px] flex flex-col justify-end p-4 overflow-hidden rounded-[2rem]">
+      <div className="relative  min-w-[120px] min-h-[350px] flex flex-col justify-end p-4 overflow-hidden rounded-[2rem]">
         <h4 className="text-2xl sm:text-3xl font-semibold z-[12]">
           My Photography
         </h4>
+        <img
+          src="/photography.png"
+          alt="photography image"
+          className="w-full h-full absolute top-0 left-0 photography"
+        />
 
         <div></div>
         <div className="bento-card-gradient"></div>
