@@ -4,10 +4,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Spacing from "../components/Spacing";
 import BlogSection from "../components/BlogSection";
+import ContactHeader from "../components/contact-page/ContactHeader"
 import "../components/index.css";
 ---
 <Layout>
     <Navbar/>
+    <ContactHeader client:load />
     <BlogSection/>
     <Footer/>
     <Spacing/>

@@ -26,7 +26,7 @@ export default function WorkCards() {
       className="flex gap-4 flex-col mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]"
     >
       {workList.map((work, index) => (
-        <div className="flex flex-col lg:flex-row gap-8 items-center card-work p-2">
+        <div className="flex flex-col lg:flex-row gap-8 items-center card p-2">
           <div>
             <img
               src={work.coverImage}
