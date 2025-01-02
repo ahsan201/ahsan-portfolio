@@ -4,13 +4,16 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Spacing from "../components/Spacing";
 import BlogSection from "../components/BlogSection";
-import ContactHeader from "../components/contact-page/ContactHeader"
+import Luxestudios from "../components/project-page/Luxestudios.jsx";
 import "../components/index.css";
+import Image from "astro/components/Image.astro";
+// image 
+import luxestudiosImage from "../assets/luxestudiosweb.jpg"
 ---
 <Layout>
     <Navbar showNavManu={false} />
-    <ContactHeader client:load />
-    <BlogSection/>
+    <Luxestudios><Image src={luxestudiosImage} alt="Sitegardian Image 1" class="mx-auto"/></Luxestudios>
+    <BlogSection/>    
     <Footer/>
     <Spacing/>
 </Layout>

@@ -5,18 +5,21 @@ const workList = [
     title: "Site Guardian",
     shortDescription:
       "Site Guardian ensures construction site safety with real-time monitoring, task assignment, and device tracking, streamlining operations and enhancing security through an intuitive, role-based management platform.",
+    page: "/sitegardianproject",
   },
   {
     coverImage: "/skinsense-cover.jpg",
     title: "SkinSense Pro",
     shortDescription:
       "SkinSense Pro is a mobile app that helps users discover and select the right skincare products through barcode scanning, personalized recommendations, and a sleek, user-friendly interface.",
+    page: "/skinsenceproproject",
   },
   {
     coverImage: "/luxestudio-cover.jpg",
     title: "Luxe Studio",
     shortDescription:
       "Luxe Studio is a bespoke wedding business offering elegant and personalized services. The website showcases stunning designs, seamless planning, and unforgettable experiences for couples on their special day.",
+    page: "/luxestudiosproject",
   },
 ];
 export default function WorkCards() {
@@ -37,7 +40,11 @@ export default function WorkCards() {
           <div className="h-full flex flex-col gap-4 px-4">
             <h3 className="text-[2.25rem] font-semibold">{work.title}</h3>
             <p className="text-[#808080]">{work.shortDescription}</p>
-            <Button icon="/open-in-new-window.svg" className="mb-[14px]">
+            <Button
+              icon="/open-in-new-window.svg"
+              className="mb-[14px]"
+              btnLink={work.page}
+            >
               View Project
             </Button>
           </div>

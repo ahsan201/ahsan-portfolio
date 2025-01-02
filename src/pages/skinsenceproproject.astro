@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Spacing from "../components/Spacing";
+import BlogSection from "../components/BlogSection";
+import Skinsensepro from "../components/project-page/Skinsensepro";
+import "../components/index.css";
+import Image from "astro/components/Image.astro";
+// images skinsence pro
+import accountImg from "../assets/skinsencepro/account.jpg";
+import cameraImg from "../assets/skinsencepro/camera.jpg";
+import homeImg from "../assets/skinsencepro/home.jpg";
+import likedImg from "../assets/skinsencepro/liked.jpg";
+import loginImg from "../assets/skinsencepro/login.jpg";
+import productPageImg from "../assets/skinsencepro/product-page.jpg";
+import signupImg from "../assets/skinsencepro/signup.jpg";
+import skintypeImg from "../assets/skinsencepro/skintype.jpg";
+import splashScreenImg from "../assets/skinsencepro/splash-screen.jpg";
+import suggestionsImg from "../assets/skinsencepro/suggestions.jpg";
+
+---
+
+<Layout>
+    <Navbar showNavManu={false} />
+    <Skinsensepro><Image src={accountImg} alt="Account Screen" />
+        <Image src={cameraImg} alt="Camera Screen" />
+        <Image src={homeImg} alt="Home Screen" />
+        <Image src={likedImg} alt="Liked Screen" />
+        <Image src={loginImg} alt="Login Screen" />
+        <Image src={productPageImg} alt="Product Page" />
+        <Image src={signupImg} alt="Signup Screen" />
+        <Image src={skintypeImg} alt="Skin Type Selection" />
+        <Image src={splashScreenImg} alt="Splash Screen" />
+        <Image src={suggestionsImg} alt="Suggestions Screen" /></Skinsensepro>
+    <BlogSection/>    
+    <Footer/>
+    <Spacing/>
+</Layout>

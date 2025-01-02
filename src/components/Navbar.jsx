@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-export default function Navbar() {
+export default function Navbar({ showNavManu = true }) {
   const scrollToSection = (id) => {
     document
       .getElementById(id)
@@ -14,22 +14,24 @@ export default function Navbar() {
           <img src="/main-logo.jpg" alt="main logo" />
         </div>
       </a>
-      <ul className="hidden md:block">
-        <li className="flex gap-8">
-          <a onClick={() => scrollToSection("work")} href="#work">
-            Work
-          </a>
-          <a onClick={() => scrollToSection("about")} href="#about">
-            About
-          </a>
-          <a onClick={() => scrollToSection("skill")} href="#skill">
-            Skill
-          </a>
-          <a onClick={() => scrollToSection("blog")} href="#blog">
-            Blog
-          </a>
-        </li>
-      </ul>
+      {showNavManu && (
+        <ul className="hidden md:block">
+          <li className="flex gap-8">
+            <a onClick={() => scrollToSection("work")} href="#work">
+              Work
+            </a>
+            <a onClick={() => scrollToSection("about")} href="#about">
+              About
+            </a>
+            <a onClick={() => scrollToSection("skill")} href="#skill">
+              Skill
+            </a>
+            <a onClick={() => scrollToSection("blog")} href="#blog">
+              Blog
+            </a>
+          </li>
+        </ul>
+      )}
       <div className="flex gap-2">
         <Button className="hidden md:block" btnLink="/contact">
           Contact Me

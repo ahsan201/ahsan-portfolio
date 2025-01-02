@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Spacing from "../components/Spacing";
+import BlogSection from "../components/BlogSection";
+import Sitegardian from "../components/project-page/Sitegardian";
+import "../components/index.css";
+import Image from "astro/components/Image.astro";
+// site gardian images 
+import sg1 from "../assets/sitegardian/sg-1.jpg";
+import sg2 from "../assets/sitegardian/sg-2.jpg";
+import sg3 from "../assets/sitegardian/sg-3.jpg";
+import sg4 from "../assets/sitegardian/sg-4.jpg";
+import sg5 from "../assets/sitegardian/sg-5.jpg";
+import sg6 from "../assets/sitegardian/sg-6.jpg";
+
+---
+<Layout>
+    <Navbar showNavManu={false} />
+    <Sitegardian>
+        <Image src={sg1} alt="Sitegardian Image 1" />
+        <Image src={sg2} alt="Sitegardian Image 2" />
+        <Image src={sg3} alt="Sitegardian Image 3" />
+        <Image src={sg4} alt="Sitegardian Image 4" />
+        <Image src={sg5} alt="Sitegardian Image 5" />
+        <Image src={sg6} alt="Sitegardian Image 6" />
+    </Sitegardian>
+    <BlogSection/>    
+    <Footer/>
+    <Spacing/>
+</Layout>
