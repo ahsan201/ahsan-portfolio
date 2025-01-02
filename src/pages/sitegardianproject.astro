@@ -15,6 +15,7 @@ import sg4 from "../assets/sitegardian/sg-4.jpg";
 import sg5 from "../assets/sitegardian/sg-5.jpg";
 import sg6 from "../assets/sitegardian/sg-6.jpg";
 
+import {blogs} from "../pages/blog/[slug].astro"
 ---
 <Layout>
     <Navbar showNavManu={false} />
@@ -26,7 +27,7 @@ import sg6 from "../assets/sitegardian/sg-6.jpg";
         <Image src={sg5} alt="Sitegardian Image 5" />
         <Image src={sg6} alt="Sitegardian Image 6" />
     </Sitegardian>
-    <BlogSection/>    
+    <BlogSection blogs={blogs}/>    
     <Footer/>
     <Spacing/>
 </Layout>

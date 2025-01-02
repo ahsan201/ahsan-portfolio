@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 
 // Fetch all blogs
-const blogs = await getCollection('blog');
+export const blogs = await getCollection('blog');
 
 // Find the blog that matches the slug
 const post = blogs.find((p) => p.slug === slug);
@@ -39,7 +39,7 @@ import BlogSection from '../../components/BlogSection';
 <BlogLayout title={post.data.title} description={post.data.description}>
   <div class="blog-page mx-5 md:mx-[10vw] my-[2.5rem] md:my-[10rem]">
   <img src={post.data.image} alt={`${post.data.title} image`} class="card md:max-h-[600px] mx-auto"/>
-  <h1 class="text-5xl mt-[2rem]">{post.data.title}</h1>
+  <h1 class="text-5xl mt-[2rem] font-semibold">{post.data.title}</h1>
   <p class="italic text-[#CFCFCF]">{post.data.description}</p>
   <div class="h-[30px] w-full"></div>
   <Content />

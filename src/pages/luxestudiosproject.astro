@@ -9,11 +9,13 @@ import "../components/index.css";
 import Image from "astro/components/Image.astro";
 // image 
 import luxestudiosImage from "../assets/luxestudiosweb.jpg"
+
+import {blogs} from "../pages/blog/[slug].astro"
 ---
 <Layout>
     <Navbar showNavManu={false} />
     <Luxestudios><Image src={luxestudiosImage} alt="Sitegardian Image 1" class="mx-auto"/></Luxestudios>
-    <BlogSection/>    
+    <BlogSection blogs={blogs}/>    
     <Footer/>
     <Spacing/>
 </Layout>

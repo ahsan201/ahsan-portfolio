@@ -19,6 +19,7 @@ import skintypeImg from "../assets/skinsencepro/skintype.jpg";
 import splashScreenImg from "../assets/skinsencepro/splash-screen.jpg";
 import suggestionsImg from "../assets/skinsencepro/suggestions.jpg";
 
+import {blogs} from "../pages/blog/[slug].astro"
 ---
 
 <Layout>
@@ -33,7 +34,7 @@ import suggestionsImg from "../assets/skinsencepro/suggestions.jpg";
         <Image src={skintypeImg} alt="Skin Type Selection" />
         <Image src={splashScreenImg} alt="Splash Screen" />
         <Image src={suggestionsImg} alt="Suggestions Screen" /></Skinsensepro>
-    <BlogSection/>    
+    <BlogSection blogs={blogs}/>    
     <Footer/>
     <Spacing/>
 </Layout>
