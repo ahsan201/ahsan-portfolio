@@ -79,22 +79,22 @@ export default function Footer() {
         <div className="flex flex-wrap max-w-[200px] mt-4">
           <div>
             <a href="#">
-              <img src="github-icon.svg" alt="github icon" /> github
+              <img src="/github-icon.svg" alt="github icon" /> github
             </a>
           </div>
           <div>
             <a href="#">
-              <img src="linkedin-icon.svg" alt="linkedin icon" /> linkedin
+              <img src="/linkedin-icon.svg" alt="linkedin icon" /> linkedin
             </a>
           </div>
           <div>
             <a href="#">
-              <img src="twitter-icon.svg" alt="twitter icon" /> twitter
+              <img src="/twitter-icon.svg" alt="twitter icon" /> twitter
             </a>
           </div>
           <div>
             <a href="#">
-              <img src="instagram-icon.svg" alt="instagram icon" /> instagram
+              <img src="/instagram-icon.svg" alt="instagram icon" /> instagram
             </a>
           </div>
         </div>

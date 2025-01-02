@@ -14,7 +14,7 @@ export default function Bento() {
         />
 
         <div className="bento-card-gradient"></div>
-        <h4 className="text-3xl font-semibold z-10">
+        <h4 className="text-2xl font-semibold z-10">
           Climbing the web dev ladder{" "}
         </h4>
         <p className="z-10">
@@ -26,7 +26,7 @@ export default function Bento() {
         <p className="z-10 font-semibold bento-text-opacity">
           Bs in Computer Science{" "}
         </p>
-        <h4 className="z-10 text-3xl font-semibold">
+        <h4 className="z-10 text-2xl font-semibold">
           Thompson Rivers University
         </h4>
         <div className="bento-card-gradient"></div>
@@ -35,19 +35,17 @@ export default function Bento() {
         <p className="absolute z-10 top-[30%] left-[15%] text-5 md:text-[2rem] font-semibold p-2 bg-red-500 rounded-lg whitespace-nowrap yt-sub">
           400K SUBS
         </p>
-        <h4 className="text-3xl font-semibold z-10">
-          Did Youtubeing in my home country{" "}
+        <h4 className="text-2xl font-semibold z-10">
+          Youtuber in my home country{" "}
         </h4>
         <div className="bento-card-gradient"></div>
       </div>
       <div className="relative  min-w-[120px] min-h-[350px] flex flex-col justify-end p-4 overflow-hidden rounded-[2rem]">
-        <h4 className="text-2xl sm:text-3xl font-semibold z-[12]">
-          My Photography
-        </h4>
+        <h4 className="text-2xl font-semibold z-[12]">My Photography</h4>
         <img
           src="/photography.png"
           alt="photography image"
-          className="w-full h-full absolute top-0 left-0 photography"
+          className="w-full h-full absolute top-0 left-0 photography object-cover"
         />
 
         <div></div>
@@ -59,7 +57,7 @@ export default function Bento() {
           alt="telus logo"
           className="absolute telus-logo scale-[.7] md:scale-1 overflow-hidden rounded-xl  inset-0 m-auto"
         />
-        <h4 className="text-3xl font-semibold z-10">Working as a D2D Sales </h4>
+        <h4 className="text-2xl font-semibold z-10">Working as a D2D Sales </h4>
         <div className="bento-card-gradient"></div>
       </div>
       <div className="relative min-h-[350px] overflow-hidden rounded-[2rem] bg-black flex flex-col justify-end p-4 grid-background">
@@ -80,7 +78,7 @@ export default function Bento() {
         />
         <div className="design-box1"></div>
         <div className="design-box2"></div>
-        <h4 className="text-3xl font-semibold z-10">
+        <h4 className="text-2xl font-semibold z-10">
           Obsessed with Designing{" "}
         </h4>
         <p className="z-10">

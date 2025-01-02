@@ -1,0 +1,18 @@
+---
+export const prerender = true; // Optional, for static rendering
+const { title, description, date, author, tags } = Astro.props;
+---
+
+<html>
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <article>
+      <main>
+        <slot />
+      </main>
+    </article>
+  </body>
+</html>
