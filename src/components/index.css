@@ -330,6 +330,7 @@ h2 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  color: #00b5ff;
 }
 .projects h2 {
   font-size: 32px;
@@ -398,4 +399,13 @@ h2 {
   font-weight: 400;
   line-height: 150%;
   word-spacing: 0.1rem;
+  color: #7a7a7a;
+}
+
+.blog-page ul {
+  list-style-type: circle;
+}
+.blog-page h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }

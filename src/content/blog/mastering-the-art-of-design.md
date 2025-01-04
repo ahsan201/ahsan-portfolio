@@ -4,7 +4,7 @@ description: "Design is not merely about aesthetics; it is the harmonious blend 
 date: 2025-01-01T00:00:00.000Z
 author: "Ahsan Niloy"
 tags: ["web design", "UX", "ui"]
-image: "/images/blogs/delete-demo.jpg"
+image: "/images/blogs/art-of-design.jpg"
 ---
 
 Whether you're a graphic designer, product designer, or a budding enthusiast, mastering the art of design is a journey of constant evolution and learning.

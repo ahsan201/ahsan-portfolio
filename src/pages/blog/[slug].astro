@@ -37,7 +37,7 @@ import BlogSection from '../../components/BlogSection';
 <Layout>
 <Navbar showNavManu={false}/>
 <BlogLayout title={post.data.title} description={post.data.description}>
-  <div class="blog-page mx-5 md:mx-[10vw] my-[2.5rem] md:my-[10rem]">
+  <div class="blog-page mx-5 md:max-w-[800px] md:mx-auto my-[2.5rem] md:my-[5rem]">
   <img src={post.data.image} alt={`${post.data.title} image`} class="card md:max-h-[600px] mx-auto"/>
   <h1 class="text-5xl mt-[2rem] font-semibold">{post.data.title}</h1>
   <p class="italic text-[#CFCFCF]">{post.data.description}</p>
