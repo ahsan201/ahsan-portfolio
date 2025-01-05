@@ -30,6 +30,6 @@ import {blogs} from "../pages/blog/[slug].astro"
 	<Bento/>
 	<Skill/>
 	<BlogSection blogs={blogs} />
-	<Footer/>
+	<Footer client:load/>
 	<Spacing/>
 </Layout>

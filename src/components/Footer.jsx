@@ -1,34 +1,9 @@
+import NewsletterForm from "./NewsletterForm";
+
 export default function Footer() {
   return (
     <footer className="md:mx-[10vw] mx-5 mt-[7.5rem] md:mt-[10rem]">
-      <div>
-        <form action="#" className="flex flex-col gap-4 justify-center">
-          <img
-            src="/nav-main-icon.svg"
-            alt="nav icon"
-            className="max-w-[70px] mx-auto"
-          />
-          <h3 className="text-6 font-semibold text-center">
-            Signup for newsletter
-          </h3>
-          <p className="text-[14px] sm:text-4 text-[#929292] text-center">
-            Get notified when i post a new blog.
-          </p>
-          <input
-            type="text"
-            placeholder="name"
-            className="p-4 bg-[rgba(219, 219, 219, 0.28)] border border-[#7E7E7E] rounded-xl"
-          />
-          <input
-            type="email"
-            placeholder="email"
-            className="p-4 bg-[rgba(219, 219, 219, 0.28)] border border-[#7E7E7E] rounded-xl"
-          />
-          <button className="text-white font-bold justify-center bg-[#323232] rounded-xl">
-            Submit
-          </button>
-        </form>
-      </div>
+      <NewsletterForm />
       <div>
         <h4 className="text-[1.5rem] font-semibold">about the website</h4>
         <p className="text-[#929292]">

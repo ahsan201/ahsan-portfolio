@@ -6,7 +6,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 export async function getStaticPaths() {
   const blogs = await getCollection('blog');
 
-  return blogs.map((post) => ({
+  return blogs.map((post: { slug: any; }) => ({
     params: { slug: post.slug },
   }));
 }
@@ -18,7 +18,7 @@ const { slug } = Astro.params;
 export const blogs = await getCollection('blog');
 
 // Find the blog that matches the slug
-const post = blogs.find((p) => p.slug === slug);
+const post = blogs.find((p: { slug: any; }) => p.slug === slug);
 
 if (!post) {
   throw new Error(`Blog post not found for slug: ${slug}`);
@@ -46,6 +46,6 @@ import BlogSection from '../../components/BlogSection';
 </div>
 </BlogLayout>
 <BlogSection blogs={blogs}/>
-<Footer/>
+<Footer client:load/>
 <Spacing/>
 </Layout>

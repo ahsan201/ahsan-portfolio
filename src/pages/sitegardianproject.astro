@@ -28,6 +28,6 @@ import {blogs} from "../pages/blog/[slug].astro"
         <Image src={sg6} alt="Sitegardian Image 6" />
     </Sitegardian>
     <BlogSection blogs={blogs}/>    
-    <Footer/>
+    <Footer client:load/>
     <Spacing/>
 </Layout>

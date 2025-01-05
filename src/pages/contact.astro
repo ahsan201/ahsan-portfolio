@@ -13,7 +13,7 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const blogs = await getCollection('blog');
 
-  return blogs.map((post) => ({
+  return blogs.map((post: { slug: any; }) => ({
     params: { slug: post.slug },
   }));
 }
@@ -25,7 +25,7 @@ const { slug } = Astro.params;
 const blogs = await getCollection('blog');
 
 // Find the blog that matches the slug
-const post = blogs.find((p) => p.slug === slug);
+const post = blogs.find((p: { slug: any; }) => p.slug === slug);
 
 if (!post) {
   throw new Error(`Blog post not found for slug: ${slug}`);
@@ -39,6 +39,6 @@ const { Content } = await post.render();
     <Navbar showNavManu={false} />
     <ContactHeader client:load />
     <BlogSection blogs={blogs} />
-    <Footer/>
+    <Footer client:load/>
     <Spacing/>
 </Layout>
