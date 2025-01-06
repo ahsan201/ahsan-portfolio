@@ -1,6 +1,6 @@
 export default function Bento() {
   return (
-    <div className="lg:mx-[20vw] mx-5 lg:my-[10rem] my-[7.5rem] grid gap-4 bento text-white">
+    <div className="lg:mx-[15vw] mx-5 lg:my-[10rem] my-[7.5rem] grid gap-4 bento text-white">
       <div className="relative min-h-[350px] overflow-hidden rounded-[2rem] flex flex-col gap-2 justify-end p-4">
         <img
           src="/JavaScript-logo.jpg"
@@ -32,7 +32,7 @@ export default function Bento() {
         <div className="bento-card-gradient"></div>
       </div>
       <div className="relative min-w-[120px] min-h-[350px] rounded-[2rem] overflow-hidden flex flex-col justify-end p-4 z-10">
-        <p className="absolute z-10 top-[30%] left-[15%] text-5 md:text-[2rem] font-semibold p-2 bg-red-500 rounded-lg whitespace-nowrap yt-sub">
+        <p className="absolute z-10 top-[30%] left-[12%] text-5 md:text-[2rem] font-semibold p-2 bg-red-500 rounded-lg whitespace-nowrap yt-sub">
           400K SUBS
         </p>
         <h4 className="text-2xl font-semibold z-10">

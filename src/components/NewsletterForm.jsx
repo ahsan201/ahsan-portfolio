@@ -15,25 +15,29 @@ export default function NewsletterForm() {
   const [email, setEmail] = useState(""); // Stores the email input value
   const [formStatus, setFormStatus] = useState(""); // Stores the status message after form submission
   const [statusColor, setStatusColor] = useState("#323232"); // Stores the color of the status message
+  const [isLoading, setIsLoading] = useState(false); // loading submit
 
   // Utility function to validate email format
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
 
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevents the default form submission behavior
+    e.preventDefault();
+    setIsLoading(true); // Prevents the default form submission behavior
 
     // Check if name and email are not empty
     if (!name.trim() || !email.trim()) {
-      setFormStatus("Please provide both name and email.");
+      setFormStatus("Please provide both \nname and email.");
       setStatusColor("red");
+      setIsLoading(false);
       return;
     }
 
     // Validate the email format
     if (!validateEmail(email)) {
-      setFormStatus("Please enter a valid email address.");
+      setFormStatus("Please enter a \nvalid email address.");
       setStatusColor("red");
+      setIsLoading(false);
       return;
     }
 
@@ -46,7 +50,7 @@ export default function NewsletterForm() {
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
-        setFormStatus("This email is already subscribed.");
+        setFormStatus("This email is \nalready subscribed.");
         setStatusColor("orange");
         return;
       }
@@ -59,20 +63,19 @@ export default function NewsletterForm() {
       });
 
       // Update the form status to success
-      setFormStatus("Thank you for subscribing to the newsletter.");
+      setFormStatus("Thank you for subscribing \nto the newsletter.");
       setStatusColor("green");
 
       // Clear the form fields
       setName("");
       setEmail("");
-
-      console.log(name);
-      console.log(email);
     } catch (e) {
       // Handle any errors during form submission
       console.error("Error submitting the newsletter form: ", e);
-      setFormStatus("An error occurred. Please try again later.");
+      setFormStatus("An error occurred. \nPlease try again later.");
       setStatusColor("red");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -81,7 +84,7 @@ export default function NewsletterForm() {
     <div>
       <form
         onSubmit={handleSubmit} // Bind the handleSubmit function to the form submission
-        className="flex flex-col gap-4 justify-center" // Tailwind CSS classes for styling
+        className="flex flex-col gap-4 justify-center min-w-[250px] md:min-w-[300px]" // Tailwind CSS classes for styling
       >
         {/* Logo at the top of the form */}
         <img
