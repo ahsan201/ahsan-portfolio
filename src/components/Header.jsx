@@ -1,7 +1,13 @@
+import { motion } from "framer-motion";
 import Button from "./Button";
 export default function Header() {
   return (
-    <div className=" flex flex-col md:flex-row items-center md:mx-[10vw] mx-5 mt-[6rem]">
+    <motion.div
+      className=" flex flex-col md:flex-row items-center md:mx-[10vw] mx-5 mt-[6rem]"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       <div>
         <h1 className="text-[3rem] md:text-[6rem] font-semibold leading-none">
           Hi, I’m Ahsan
@@ -29,6 +35,6 @@ export default function Header() {
           className=" mt-[8rem] md:mt-6 scale-[1.8] md:scale-[1] pointer-events-none mix-blend-screen"
         ></video>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -195,7 +195,7 @@ export default function ContactHeader() {
           <p className="text-center mt-1">github</p>
         </a>
         <a
-          href="https://www.linkedin.com/in/ahsan-habib"
+          href="https://www.linkedin.com/in/ahsan-habib-niloy-74429929a/"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-[100px]"

@@ -24,9 +24,9 @@ import {blogs} from "../pages/blog/[slug].astro"
 
 <Layout>
 	<Navbar />
-	<Header/>
-	<WorkCards/>
-	<AboutMe/>
+	<Header client:load/>
+	<WorkCards client:load/>
+	<AboutMe client:visible/>
 	<Bento/>
 	<Skill/>
 	<BlogSection blogs={blogs} />

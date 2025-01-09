@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Button from "./Button";
 const workList = [
   {
@@ -29,9 +30,13 @@ export default function WorkCards() {
       className="flex gap-4 flex-col mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]"
     >
       {workList.map((work, index) => (
-        <div
+        <motion.div
           className="flex flex-col lg:flex-row gap-8 items-center card p-2"
           key={index}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <div>
             <img
@@ -51,7 +56,7 @@ export default function WorkCards() {
               View Project
             </Button>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
