@@ -43,7 +43,7 @@ export default function Bento() {
       <div className="relative  min-w-[120px] min-h-[350px] flex flex-col justify-end p-4 overflow-hidden rounded-[2rem]">
         <h4 className="text-2xl font-semibold z-[12]">My Photography</h4>
         <img
-          src="/photography.png"
+          src="/photography.jpg"
           alt="photography image"
           className="w-full h-full absolute top-0 left-0 photography object-cover"
         />

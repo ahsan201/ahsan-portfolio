@@ -25,6 +25,7 @@ button {
 }
 
 .primary-button {
+  padding: 10px 20px;
   border-radius: 109px;
   background: radial-gradient(
       107.08% 85.59% at 86.3% 87.5%,
@@ -41,6 +42,7 @@ button {
   box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
 }
 .secondary-button {
+  padding: 10px 20px;
   border-radius: 109px;
   background: radial-gradient(
       107.08% 85.59% at 86.3% 87.5%,
@@ -113,7 +115,7 @@ button {
 }
 .bento div:nth-child(5):not(.design-box1, .design-box2) {
   grid-area: e;
-  background-image: url("/legacy-marking.jpeg");
+  background-image: url("/legacy-marking.jpg");
   background-size: cover;
   background-position: center;
 }

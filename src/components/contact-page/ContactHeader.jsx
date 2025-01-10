@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 // Firebase
 import { db } from "../../../firebase/firebase";
@@ -83,7 +84,12 @@ export default function ContactHeader() {
   };
 
   return (
-    <div className="mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]">
+    <motion.div
+      className="mx-5 md:mx-[10vw] my-[7.5rem] md:my-[10rem]"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       <h1 className="text-6xl font-bold mb-4">Contact Me</h1>
       <p className="text-gray-600 mb-6">
         This is the place where real magic begins.
@@ -234,6 +240,6 @@ export default function ContactHeader() {
           <p className="text-center mt-1">instagram</p>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

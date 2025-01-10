@@ -121,7 +121,7 @@ export default function NewsletterForm() {
           onChange={(e) => setEmail(e.target.value)} // Update the email state on input change
         />
         {/* Submit button */}
-        <button className="text-white font-bold justify-center bg-[#323232] rounded-xl">
+        <button className="text-white font-bold justify-center bg-[#323232] rounded-xl px-[20px] py-[10px]">
           Submit
         </button>
         {/* Status message */}

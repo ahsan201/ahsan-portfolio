@@ -6,8 +6,8 @@ import Spacing from "../components/Spacing";
 import BlogSection from "../components/BlogSection";
 import Skinsensepro from "../components/project-page/Skinsensepro";
 import "../components/index.css";
-import Image from "astro/components/Image.astro";
-// images skinsence pro
+
+// images 
 import accountImg from "../assets/skinsencepro/account.jpg";
 import cameraImg from "../assets/skinsencepro/camera.jpg";
 import homeImg from "../assets/skinsencepro/home.jpg";
@@ -19,21 +19,22 @@ import skintypeImg from "../assets/skinsencepro/skintype.jpg";
 import splashScreenImg from "../assets/skinsencepro/splash-screen.jpg";
 import suggestionsImg from "../assets/skinsencepro/suggestions.jpg";
 
-import {blogs} from "../pages/blog/[slug].astro"
+import { blogs } from "../pages/blog/[slug].astro";
 ---
 
 <Layout>
     <Navbar showNavManu={false} />
-    <Skinsensepro><Image src={accountImg} alt="Account Screen" />
-        <Image src={cameraImg} alt="Camera Screen" />
-        <Image src={homeImg} alt="Home Screen" />
-        <Image src={likedImg} alt="Liked Screen" />
-        <Image src={loginImg} alt="Login Screen" />
-        <Image src={productPageImg} alt="Product Page" />
-        <Image src={signupImg} alt="Signup Screen" />
-        <Image src={skintypeImg} alt="Skin Type Selection" />
-        <Image src={splashScreenImg} alt="Splash Screen" />
-        <Image src={suggestionsImg} alt="Suggestions Screen" /></Skinsensepro>
-    <BlogSection blogs={blogs}/>    
-    
+    <Skinsensepro>
+        <img src={accountImg.src} alt="Account Screen" />
+        <img src={cameraImg.src} alt="Camera Screen" />
+        <img src={homeImg.src} alt="Home Screen" />
+        <img src={likedImg.src} alt="Liked Screen" />
+        <img src={loginImg.src} alt="Login Screen" />
+        <img src={productPageImg.src} alt="Product Page" />
+        <img src={signupImg.src} alt="Signup Screen" />
+        <img src={skintypeImg.src} alt="Skin Type Selection" />
+        <img src={splashScreenImg.src} alt="Splash Screen" />
+        <img src={suggestionsImg.src} alt="Suggestions Screen" />
+    </Skinsensepro>
+    <BlogSection blogs={blogs} />    
 </Layout>

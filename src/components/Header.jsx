@@ -19,9 +19,8 @@ export default function Header() {
         <p className="text-[12px] font-bold mt-2 md:text-[20px] md:font-semibold">
           CS major at Thompson Rivers University <span>•</span> web developer
         </p>
-        <Button className="md:hidden mt-2 mr-2">My CV</Button>
-        <Button className="md:hidden" type="secondary">
-          Contract Me
+        <Button className="md:hidden mt-4" btnLink="/contact">
+          Contact Me
         </Button>
       </div>
       <div className="overflow-hidden pb-5">
