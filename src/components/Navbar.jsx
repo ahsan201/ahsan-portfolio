@@ -36,6 +36,13 @@ export default function Navbar({ showNavManu = true }) {
         <Button className="hidden md:block" btnLink="/contact">
           Contact Me
         </Button>
+        <Button
+          className="hidden md:block"
+          type="secondary"
+          btnLink="/Ahsan-Resume.pdf"
+        >
+          My Resume
+        </Button>
       </div>
     </div>
   );

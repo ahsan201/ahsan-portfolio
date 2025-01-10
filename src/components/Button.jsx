@@ -1,10 +1,10 @@
 import "./index.css";
 
 export default function Button({
-  children,
+  children = "add clildren",
   type = "primary",
   icon = "",
-  className,
+  className = "",
   btnLink = "#",
 }) {
   const buttonType =

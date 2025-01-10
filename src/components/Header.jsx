@@ -19,9 +19,18 @@ export default function Header() {
         <p className="text-[12px] font-bold mt-2 md:text-[20px] md:font-semibold">
           CS major at Thompson Rivers University <span>•</span> web developer
         </p>
-        <Button className="md:hidden mt-4" btnLink="/contact">
-          Contact Me
-        </Button>
+        <div className="mt-4 flex gap-2">
+          <Button className="md:hidden" btnLink="/contact">
+            Contact Me
+          </Button>
+          <Button
+            type="secondary"
+            className="md:hidden"
+            btnLink="/Ahsan-Resume.pdf"
+          >
+            My Resume
+          </Button>
+        </div>
       </div>
       <div className="overflow-hidden pb-5">
         <video
